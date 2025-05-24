@@ -109,6 +109,10 @@ body
   transform-origin: right;
   position: relative;
 }
+.container.flipped {
+  transform: rotateY(180deg) translateX(100%);
+}
+
 .card-front, .card-back {
   backface-visibility: hidden;
   position: absolute;
