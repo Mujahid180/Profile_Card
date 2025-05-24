@@ -1,0 +1,118 @@
+*
+{
+    margin: 0px;
+}
+body
+{
+    /* background-color: rgb(230, 230, 236); */
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a6c1ee);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.container
+{
+    width: 360px;
+    height: 630px;
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(112, 9, 255, 0.2);
+    
+}
+.student
+{
+    background-color: rgb(37, 37, 202);
+    color: white;
+}
+.picture
+{
+    width: 360px;
+}
+.photo
+{
+    height: 250px;
+    width: 200px;
+    border: 1px solid black;
+    margin-top: 15px;
+}
+
+.signature {
+    height: 50px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+.Principal {
+    text-align: right;
+    margin-right: 20px;
+}
+.contact
+{
+    background-color: rgb(37, 37, 202);
+    color: white;
+    padding: 5px;
+}
+/* back-side */
+.info {
+  padding: 0 10px;
+  text-align: left;
+}
+
+.info-row {
+  margin: 10px 0;
+  display: flex;
+}
+
+.label {
+  width: 120px;
+  font-size: 14px;
+}
+
+.value {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.address-row .value {
+  line-height: 1.4;
+}
+.qr {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 20px auto 10px auto;
+    
+}
+.website {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Flip code */
+.card:hover .container {
+  transform: rotateY(180deg) translateX(100%);
+}
+.card {
+  perspective: 300px;
+}
+.container{
+  transition: 0.7s;
+  transform-style: preserve-3d;
+  transform-origin: right;
+  position: relative;
+}
+.card-front, .card-back {
+  backface-visibility: hidden;
+  position: absolute;
+}
+.card-back {
+  transform: rotateY(180deg) translateZ(1px);
+}
